@@ -24,7 +24,7 @@
           <div class="form-group form-row">
             <label class="col-md-2 col-form-label text-md-right" for="ownerName">Pet Owner</label>
             <div class="col-md-10">
-              <input type="text" class="form-control" id="ownerName" placeholder="Owner's Name" v-model="formData.ownerName">
+              <input type="text" class="form-control" id="ownerName" placeholder="Owner's Name" v-model="formData.petOwner">
             </div>
           </div>
 
@@ -78,7 +78,7 @@ export default {
     requestAdd: function() {
       this.formData  = {
           petName: this.formData.petName,
-          ownerName: this.formData.ownerName,
+          petOwner: this.formData.petOwner,
           aptDate: this.formData.aptDate + ' ' + this.formData.aptTime,
           aptNotes: this.formData.aptNotes
       };
